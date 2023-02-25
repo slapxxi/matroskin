@@ -1,0 +1,12 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .badge {
+    --bg: theme('colors.red.600');
+  }
+
+  .badge--blue {
+    --bg: theme('colors.mediumBlue-500');
+  }
+}

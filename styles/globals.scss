@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.no-scroll {
+  overflow: hidden !important;
+  overflow-y: scroll !important;
+  height: 100% !important;
+
+  body {
+    overflow: hidden !important;
+    height: 100% !important;
+  }
+}
+
+@layer base {
+  :root {
+    --darkGray-400: hsl(0, 0%, 65%);
+    --darkGray-600: hsl(0, 0%, 22%);
+    --mediumBlue-500: hsl(224, 81%, 50%);
+  }
+
+  @font-face {
+    font-family: RFTone;
+    src: url(/fonts/RFTone-Regular.woff2);
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: RFTone;
+    src: url(/fonts/RFTone-SemiBold.woff2);
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: RFTone;
+    src: url(/fonts/RFTone-Bold.woff2);
+    font-weight: 700;
+  }
+
+  html,
+  body,
+  #__next {
+    @apply bg-lightGray-100;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: RFTone, sans-serif;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
